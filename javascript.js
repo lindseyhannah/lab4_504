@@ -48,12 +48,13 @@ function infoFunc() {
 //the below JS code takes advantage of the Geolocate API as it is incorporated in the Leaflet JS API with the locate method
 function onLocationFound(e) { //this function does three things if the location is found: it defines a radius variable, adds a popup to the map, and adds a circle to the map.
 
-  var radius = e.accuracy / 2; //this defines a variable radius as the accuracy value returned by the locate method divided by 2. It is divided by 2 because the accuracy value is the sum of the estimated accuracy of the latitude plus the estimated accuracy of the longitude. The unit is meters.
+  var radius = e.accuracy / 2;
+  var r= radius.toFixed(2); //this defines a variable radius as the accuracy value returned by the locate method divided by 2. It is divided by 2 because the accuracy value is the sum of the estimated accuracy of the latitude plus the estimated accuracy of the longitude. The unit is meters.
   var here = e.latlng;
 
 
   L.marker(e.latlng).addTo(map)
-    .bindPopup("Your location is " + here + " and you are within " + radius + " meters of this point.").openPopup();
+    .bindPopup("Your location is " + here + " and you are within " + r + " meters of this point.").openPopup();
   //this adds a Leaflet popup to the map at the lat and long returned by the locate function. The text of the popup is defined here as well. Please change this text to specify what unit the radius is reported in.
 
   L.circle(e.latlng, radius).addTo(map); // this adds a Leaflet circle to the map at the lat and long returned by the locate function. Its radius is set to the var radius defined above.
