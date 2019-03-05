@@ -5,4 +5,34 @@ body {
 html, body, #map {
     height: 100%;
     width: 100vw;
+    z-index: 1;
+}	
+
+.locate_button {
+	position: absolute;
+	top: 10vh;
+	right: 2vh;
+	height: 5vh;
+	width: 12vh;
+	background-color: #4CAF50;
+ 	color: white;
+	text-align: center; 
+	z-index: 10;
+
 }
+
+.info_button {
+    position: absolute;
+	top: 16vh;
+	right: 2vh;
+	height: 5vh;
+	width: 12vh;
+	background-color: #4CAF50;
+	color: white;
+	text-align: center; 
+	z-index: 10;	
+}
+
+
+
+
