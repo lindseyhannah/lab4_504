@@ -57,7 +57,8 @@ function onLocationFound(e) { //this function does three things if the location 
     .bindPopup("Your location is " + here + " and you are within " + r + " meters of this point.").openPopup();
   //this adds a Leaflet popup to the map at the lat and long returned by the locate function. The text of the popup is defined here as well. Please change this text to specify what unit the radius is reported in.
 
-  L.circle(e.latlng, radius).addTo(map); // this adds a Leaflet circle to the map at the lat and long returned by the locate function. Its radius is set to the var radius defined above.
+  //L.circle(e.latlng, radius).addTo(map); // this adds a Leaflet circle to the map at the lat and long returned by the locate function. Its radius is set to the var radius defined above.
+
   //You're original coment said that color should be blue if r< 30.  Code originally said "green" for this condition but I changed it to blue to match comment. 
   if (radius < 30) {
     L.circle(e.latlng, radius, {color: 'blue'}).addTo(map);
