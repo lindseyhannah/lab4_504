@@ -10,7 +10,7 @@ html, body, #map {
 
 .locate_button {
 	position: absolute;
-	top: 10vh;
+	top: 11vh;
 	right: 2vh;
 	height: 5vh;
 	width: 12vh;
@@ -23,7 +23,7 @@ html, body, #map {
 
 .info_button {
     position: absolute;
-	top: 16vh;
+	top: 17vh;
 	right: 2vh;
 	height: 5vh;
 	width: 12vh;
