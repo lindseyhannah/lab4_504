@@ -1,5 +1,5 @@
 window.onload = function(){
-alert("This webpage would like to access your device's location to enhance your interactive experience with the map.  Pressing 'Allow' in the next popup will grant permission to use your device's geolocation");
+alert("This webpage would like to access your device's location to enhance your interactive experience with the map.  Pressing 'Ok' will access your device's GPS sensors to locate you on the map.");
 } // On load, this alert notifies the user that the page will ask to access their location and gives a reason why. You can easily modify this text.
 
 //var map = L.map('map').fitWorld(); //Here we initialize the map in the "map" div defined in the html body. Below, we call in Mapbox tiles and use the options to set the max zoom to 18, include our attribution, specify that the tiles set we want is mapbox.streets, and provide the access token for Mapbox's API
